@@ -20,7 +20,7 @@ const store = (function(){
   };
 
   const findAndUpdate = function(id, newData) {
-    this.items.map(item => item.id === id ? Object.assign(this.findById(id), newData): item)
+    this.items.map(item => item.id === id ? Object.assign(item, newData): item)
   }
 
   // const findAndUpdateName = function(id, name) {
