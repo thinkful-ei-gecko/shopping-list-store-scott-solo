@@ -18,10 +18,17 @@ const api = function() {
     return fetch(`${BASE_URL}/items/${id}`, {method: 'PATCH', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(updateData)});
   }
 
+//   function findAndUpdate(id, newData) {
+//       fetch(`${BASE_URL}/items/${id}`)
+//         .then(res => res.json())
+//         .then(resJson => Object.assign(resJson, newData))
+//   }
+
   return {
     BASE_URL,
     getItems,
     createItem,
     updateItem,
+    // findAndUpdate,
   };
 }();

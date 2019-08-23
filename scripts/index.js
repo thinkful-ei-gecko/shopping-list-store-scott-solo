@@ -12,11 +12,16 @@ $(document).ready(function() {
   });
 });
 
+
+
+
+
 // api.getItems()
 //   .then(res => res.json())
 //   .then((items) => {
 //     const item = items[0];
-//     return api.updateItem(item.id, {name: 'foobar', checked: 'asdfasdf'})
+//     return api.findAndUpdate(item.id, {name: 'foobar'});
+//     console.log('')
 //   })
 //   .then(res => res.json())
 //   .then(() => console.log('udpated'))
